@@ -1115,52 +1115,52 @@ class IPAdapterLoadEmbeds:
 """
 NODE_CLASS_MAPPINGS = {
     # Main Apply Nodes
-    "IPAdapter": IPAdapterSimple,
-    "IPAdapterAdvanced": IPAdapterAdvanced,
-    "IPAdapterBatch": IPAdapterBatch,
-    "IPAdapterFaceID": IPAdapterFaceID,
-    "IPAAdapterFaceIDBatch": IPAAdapterFaceIDBatch,
-    "IPAdapterTiled": IPAdapterTiled,
-    "IPAdapterTiledBatch": IPAdapterTiledBatch,
-    "IPAdapterEmbeds": IPAdapterEmbeds,
+    "V2_IPAdapter": IPAdapterSimple,
+    "V2_IPAdapterAdvanced": IPAdapterAdvanced,
+    "V2_IPAdapterBatch": IPAdapterBatch,
+    "V2_IPAdapterFaceID": IPAdapterFaceID,
+    "V2_IPAAdapterFaceIDBatch": IPAAdapterFaceIDBatch,
+    "V2_IPAdapterTiled": IPAdapterTiled,
+    "V2_IPAdapterTiledBatch": IPAdapterTiledBatch,
+    "V2_IPAdapterEmbeds": IPAdapterEmbeds,
 
     # Loaders
-    "IPAdapterUnifiedLoader": IPAdapterUnifiedLoader,
-    "IPAdapterUnifiedLoaderFaceID": IPAdapterUnifiedLoaderFaceID,
-    "IPAdapterModelLoader": IPAdapterModelLoader,
-    "IPAdapterInsightFaceLoader": IPAdapterInsightFaceLoader,
+    "V2_IPAdapterUnifiedLoader": IPAdapterUnifiedLoader,
+    "V2_IPAdapterUnifiedLoaderFaceID": IPAdapterUnifiedLoaderFaceID,
+    "V2_IPAdapterModelLoader": IPAdapterModelLoader,
+    "V2_IPAdapterInsightFaceLoader": IPAdapterInsightFaceLoader,
 
     # Helpers
-    "IPAdapterEncoder": IPAdapterEncoder,
-    "IPAdapterCombineEmbeds": IPAdapterCombineEmbeds,
-    "IPAdapterNoise": IPAdapterNoise,
-    "PrepImageForClipVision": PrepImageForClipVision,
-    "IPAdapterSaveEmbeds": IPAdapterSaveEmbeds,
-    "IPAdapterLoadEmbeds": IPAdapterLoadEmbeds,
+    "V2_IPAdapterEncoder": IPAdapterEncoder,
+    "V2_IPAdapterCombineEmbeds": IPAdapterCombineEmbeds,
+    "V2_IPAdapterNoise": IPAdapterNoise,
+    "V2_PrepImageForClipVision": PrepImageForClipVision,
+    "V2_IPAdapterSaveEmbeds": IPAdapterSaveEmbeds,
+    "V2_IPAdapterLoadEmbeds": IPAdapterLoadEmbeds,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     # Main Apply Nodes
-    "IPAdapter": "IPAdapter",
-    "IPAdapterAdvanced": "IPAdapter Advanced",
-    "IPAdapterBatch": "IPAdapter Batch (Adv.)",
-    "IPAdapterFaceID": "IPAdapter FaceID",
-    "IPAAdapterFaceIDBatch": "IPAdapter FaceID Batch",
-    "IPAdapterTiled": "IPAdapter Tiled",
-    "IPAdapterTiledBatch": "IPAdapter Tiled Batch",
-    "IPAdapterEmbeds": "IPAdapter Embeds",
+    "V2_IPAdapter": "IPAdapter V2",
+    "V2_IPAdapterAdvanced": "IPAdapter Advanced V2",
+    "V2_IPAdapterBatch": "IPAdapter Batch (Adv.) V2",
+    "V2_IPAdapterFaceID": "IPAdapter FaceID V2",
+    "V2_IPAAdapterFaceIDBatch": "IPAdapter FaceID Batch V2",
+    "V2_IPAdapterTiled": "IPAdapter Tiled V2",
+    "V2_IPAdapterTiledBatch": "IPAdapter Tiled Batch V2",
+    "V2_IPAdapterEmbeds": "IPAdapter Embeds V2",
 
     # Loaders
-    "IPAdapterUnifiedLoader": "IPAdapter Unified Loader",
-    "IPAdapterUnifiedLoaderFaceID": "IPAdapter Unified Loader FaceID",
-    "IPAdapterModelLoader": "IPAdapter Model Loader",
-    "IPAdapterInsightFaceLoader": "IPAdapter InsightFace Loader",
+    "V2_IPAdapterUnifiedLoader": "IPAdapter Unified Loader V2",
+    "V2_IPAdapterUnifiedLoaderFaceID": "IPAdapter Unified Loader FaceID V2",
+    "V2_IPAdapterModelLoader": "IPAdapter Model Loader V2",
+    "V2_IPAdapterInsightFaceLoader": "IPAdapter InsightFace Loader V2",
 
     # Helpers
-    "IPAdapterEncoder": "IPAdapter Encoder",
-    "IPAdapterCombineEmbeds": "IPAdapter Combine Embeds",
-    "IPAdapterNoise": "IPAdapter Noise",
-    "PrepImageForClipVision": "Prep Image For ClipVision",
-    "IPAdapterSaveEmbeds": "IPAdapter Save Embeds",
-    "IPAdapterLoadEmbeds": "IPAdapter Load Embeds",
+    "V2_IPAdapterEncoder": "IPAdapter Encoder V2",
+    "V2_IPAdapterCombineEmbeds": "IPAdapter Combine Embeds V2",
+    "V2_IPAdapterNoise": "IPAdapter Noise V2",
+    "V2_PrepImageForClipVision": "Prep Image For ClipVision V2",
+    "V2_IPAdapterSaveEmbeds": "IPAdapter Save Embeds V2",
+    "V2_IPAdapterLoadEmbeds": "IPAdapter Load Embeds V2",
 }
