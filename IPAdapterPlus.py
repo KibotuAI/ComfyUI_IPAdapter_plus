@@ -1650,17 +1650,17 @@ NODE_CLASS_MAPPINGS = {
     "V2_IPAdapterTiled": IPAdapterTiled,
     "V2_IPAdapterTiledBatch": IPAdapterTiledBatch,
     "V2_IPAdapterEmbeds": IPAdapterEmbeds,
-    "IPAdapterStyleComposition": IPAdapterStyleComposition,
-    "IPAdapterStyleCompositionBatch": IPAdapterStyleCompositionBatch,
-    "IPAdapterMS": IPAdapterMS,
-    "IPAdapterFromParams": IPAdapterFromParams,
+    "V2_IPAdapterStyleComposition": IPAdapterStyleComposition,
+    "V2_IPAdapterStyleCompositionBatch": IPAdapterStyleCompositionBatch,
+    "V2_IPAdapterMS": IPAdapterMS,
+    "V2_IPAdapterFromParams": IPAdapterFromParams,
 
     # Loaders
     "V2_IPAdapterUnifiedLoader": IPAdapterUnifiedLoader,
     "V2_IPAdapterUnifiedLoaderFaceID": IPAdapterUnifiedLoaderFaceID,
     "V2_IPAdapterModelLoader": IPAdapterModelLoader,
     "V2_IPAdapterInsightFaceLoader": IPAdapterInsightFaceLoader,
-    "IPAdapterUnifiedLoaderCommunity": IPAdapterUnifiedLoaderCommunity,
+    "V2_IPAdapterUnifiedLoaderCommunity": IPAdapterUnifiedLoaderCommunity,
 
     # Helpers
     "V2_IPAdapterEncoder": IPAdapterEncoder,
@@ -1669,12 +1669,12 @@ NODE_CLASS_MAPPINGS = {
     "V2_PrepImageForClipVision": PrepImageForClipVision,
     "V2_IPAdapterSaveEmbeds": IPAdapterSaveEmbeds,
     "V2_IPAdapterLoadEmbeds": IPAdapterLoadEmbeds,
-    "IPAdapterWeights": IPAdapterWeights,
-    "IPAdapterCombineWeights": IPAdapterCombineWeights,
-    "IPAdapterWeightsFromStrategy": IPAdapterWeightsFromStrategy,
-    "IPAdapterPromptScheduleFromWeightsStrategy": IPAdapterPromptScheduleFromWeightsStrategy,
-    "IPAdapterRegionalConditioning": IPAdapterRegionalConditioning,
-    "IPAdapterCombineParams": IPAdapterCombineParams,
+    "V2_IPAdapterWeights": IPAdapterWeights,
+    "V2_IPAdapterCombineWeights": IPAdapterCombineWeights,
+    "V2_IPAdapterWeightsFromStrategy": IPAdapterWeightsFromStrategy,
+    "V2_IPAdapterPromptScheduleFromWeightsStrategy": IPAdapterPromptScheduleFromWeightsStrategy,
+    "V2_IPAdapterRegionalConditioning": IPAdapterRegionalConditioning,
+    "V2_IPAdapterCombineParams": IPAdapterCombineParams,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -1687,17 +1687,17 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "V2_IPAdapterTiled": "IPAdapter Tiled V2",
     "V2_IPAdapterTiledBatch": "IPAdapter Tiled Batch V2",
     "V2_IPAdapterEmbeds": "IPAdapter Embeds V2",
-    "IPAdapterStyleComposition": "IPAdapter Style & Composition SDXL",
-    "IPAdapterStyleCompositionBatch": "IPAdapter Style & Composition Batch SDXL",
-    "IPAdapterMS": "IPAdapter Mad Scientist",
-    "IPAdapterFromParams": "IPAdapter from Params",
+    "V2_IPAdapterStyleComposition": "IPAdapter Style & Composition SDXL",
+    "V2_IPAdapterStyleCompositionBatch": "IPAdapter Style & Composition Batch SDXL",
+    "V2_IPAdapterMS": "IPAdapter Mad Scientist",
+    "V2_IPAdapterFromParams": "IPAdapter from Params",
 
     # Loaders
     "V2_IPAdapterUnifiedLoader": "IPAdapter Unified Loader V2",
     "V2_IPAdapterUnifiedLoaderFaceID": "IPAdapter Unified Loader FaceID V2",
     "V2_IPAdapterModelLoader": "IPAdapter Model Loader V2",
     "V2_IPAdapterInsightFaceLoader": "IPAdapter InsightFace Loader V2",
-    "IPAdapterUnifiedLoaderCommunity": "IPAdapter Unified Loader Community",
+    "V2_IPAdapterUnifiedLoaderCommunity": "IPAdapter Unified Loader Community",
 
     # Helpers
     "V2_IPAdapterEncoder": "IPAdapter Encoder V2",
@@ -1706,10 +1706,10 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "V2_PrepImageForClipVision": "Prep Image For ClipVision V2",
     "V2_IPAdapterSaveEmbeds": "IPAdapter Save Embeds V2",
     "V2_IPAdapterLoadEmbeds": "IPAdapter Load Embeds V2",
-    "IPAdapterWeights": "IPAdapter Weights",
-    "IPAdapterWeightsFromStrategy": "IPAdapter Weights From Strategy",
-    "IPAdapterPromptScheduleFromWeightsStrategy": "Prompt Schedule From Weights Strategy",
-    "IPAdapterCombineWeights": "IPAdapter Combine Weights",
-    "IPAdapterRegionalConditioning": "IPAdapter Regional Conditioning",
-    "IPAdapterCombineParams": "IPAdapter Combine Params",
+    "V2_IPAdapterWeights": "IPAdapter Weights",
+    "V2_IPAdapterWeightsFromStrategy": "IPAdapter Weights From Strategy",
+    "V2_IPAdapterPromptScheduleFromWeightsStrategy": "Prompt Schedule From Weights Strategy",
+    "V2_IPAdapterCombineWeights": "IPAdapter Combine Weights",
+    "V2_IPAdapterRegionalConditioning": "IPAdapter Regional Conditioning",
+    "V2_IPAdapterCombineParams": "IPAdapter Combine Params",
 }
