@@ -1,6 +1,6 @@
 {
-  "last_node_id": 23,
-  "last_link_id": 44,
+  "last_node_id": 20,
+  "last_link_id": 36,
   "nodes": [
     {
       "id": 8,
@@ -14,7 +14,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -43,39 +43,6 @@
       }
     },
     {
-      "id": 5,
-      "type": "EmptyLatentImage",
-      "pos": [
-        870,
-        1100
-      ],
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            2
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        512,
-        512,
-        1
-      ]
-    },
-    {
       "id": 3,
       "type": "KSampler",
       "pos": [
@@ -87,13 +54,13 @@
         "1": 262
       },
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 42
+          "link": 32
         },
         {
           "name": "positive",
@@ -146,7 +113,7 @@
         "1": 582.3048095703125
       },
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -158,169 +125,6 @@
       "properties": {},
       "widgets_values": [
         "IPAdapter"
-      ]
-    },
-    {
-      "id": 12,
-      "type": "LoadImage",
-      "pos": [
-        450,
-        240
-      ],
-      "size": {
-        "0": 315,
-        "1": 314
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            29
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "rosario_4.jpg",
-        "image"
-      ]
-    },
-    {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": [
-        760,
-        850
-      ],
-      "size": {
-        "0": 425.27801513671875,
-        "1": 180.6060791015625
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 5
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            6
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "blurry, noisy, messy, lowres, jpeg, artifacts, ill, distorted, malformed, naked"
-      ]
-    },
-    {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": [
-        760,
-        620
-      ],
-      "size": {
-        "0": 422.84503173828125,
-        "1": 164.31304931640625
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 3
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            4
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "closeup of a beautiful woman wearing a black dress on the seaside\n\nserene, sunset, spring, high quality, detailed, diffuse light"
-      ]
-    },
-    {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        10,
-        680
-      ],
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            36
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            3,
-            5
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            8
-          ],
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "sd15/realisticVisionV51_v51VAE.safetensors"
       ]
     },
     {
@@ -363,130 +167,214 @@
           "name": "ipadapter",
           "type": "IPADAPTER",
           "links": [
-            34,
-            38
+            34
           ],
-          "shape": 3,
-          "slot_index": 1
+          "shape": 3
         }
       ],
       "properties": {
         "Node name for S&R": "IPAdapterUnifiedLoaderFaceID"
       },
       "widgets_values": [
-        "FACEID PLUS V2",
+        "FACEID PORTRAIT (style transfer)",
         0.6,
         "CPU"
       ]
     },
     {
-      "id": 22,
-      "type": "IPAdapterUnifiedLoader",
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
       "pos": [
-        855,
-        51
+        10,
+        680
       ],
       "size": {
         "0": 315,
-        "1": 78
+        "1": 98
       },
       "flags": {},
-      "order": 7,
+      "order": 0,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 43
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "link": 38
-        }
-      ],
-      "outputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            40
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "links": [
-            37
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "IPAdapterUnifiedLoader"
-      },
-      "widgets_values": [
-        "FULL FACE - SD1.5 only (portraits stronger)"
-      ]
-    },
-    {
-      "id": 21,
-      "type": "IPAdapter",
-      "pos": [
-        1280,
-        170
-      ],
-      "size": {
-        "0": 315,
-        "1": 190
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 40
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "link": 37,
-          "slot_index": 1
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 44
-        },
-        {
-          "name": "attn_mask",
-          "type": "MASK",
-          "link": null
-        }
-      ],
       "outputs": [
         {
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            42
+            36
           ],
-          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            3,
+            5
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            8
+          ],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdxl/juggernautXL_version8Rundiffusion.safetensors"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        870,
+        1100
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            2
+          ],
           "slot_index": 0
         }
       ],
       "properties": {
-        "Node name for S&R": "IPAdapter"
+        "Node name for S&R": "EmptyLatentImage"
       },
       "widgets_values": [
-        0.4,
-        0,
-        1,
-        "standard"
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 12,
+      "type": "LoadImage",
+      "pos": [
+        450,
+        240
+      ],
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            29
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "face2.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        760,
+        620
+      ],
+      "size": {
+        "0": 422.84503173828125,
+        "1": 164.31304931640625
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            4
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "a watercolor painting of a woman on the beach\n\nhigh quality artistry"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        760,
+        850
+      ],
+      "size": {
+        "0": 425.27801513671875,
+        "1": 180.6060791015625
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            6
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "photo, blurry, noisy, messy, lowres, jpeg, artifacts, ill, distorted, malformed, naked"
       ]
     },
     {
@@ -546,27 +434,18 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            43
+            32
           ],
           "shape": 3,
           "slot_index": 0
-        },
-        {
-          "name": "face_image",
-          "type": "IMAGE",
-          "links": [
-            44
-          ],
-          "shape": 3,
-          "slot_index": 1
         }
       ],
       "properties": {
         "Node name for S&R": "IPAdapterFaceID"
       },
       "widgets_values": [
-        0.8,
-        2,
+        0.65,
+        1,
         "linear",
         "concat",
         0,
@@ -649,6 +528,14 @@
       "IMAGE"
     ],
     [
+      32,
+      18,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
       34,
       20,
       1,
@@ -671,54 +558,6 @@
       20,
       0,
       "MODEL"
-    ],
-    [
-      37,
-      22,
-      1,
-      21,
-      1,
-      "IPADAPTER"
-    ],
-    [
-      38,
-      20,
-      1,
-      22,
-      1,
-      "IPADAPTER"
-    ],
-    [
-      40,
-      22,
-      0,
-      21,
-      0,
-      "MODEL"
-    ],
-    [
-      42,
-      21,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
-      43,
-      18,
-      0,
-      22,
-      0,
-      "MODEL"
-    ],
-    [
-      44,
-      18,
-      1,
-      21,
-      2,
-      "IMAGE"
     ]
   ],
   "groups": [],
